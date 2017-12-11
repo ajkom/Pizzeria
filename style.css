@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Great Vibes|Lobster');
+
+/* --------------------COMMON-------------------- */
+* {
+    font-size: 26px;
+    font-family: "Hoefler Text", Garamond, Georgia, serif;
+    margin: 0;
+}
+
+body{
+    background-color:#d2b58a;
+    max-width:100vw;
+}
+
+#about, #menu, #book {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white; 
+}
+
+.container {
+    font-size:1em;
+}
+
+.description {
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top:5px;
+    text-align: center;
+}
+
+#menu, #contacts, footer {
+    background-color:black;
+    color:white;
+}
+
+h2 { 
+    text-align: center;
+    font-family: 'Amatic SC', cursive ;
+}
+
+a, a:visited {
+    text-decoration: none;
+    padding:1%;
+}
+
+footer p {
+    margin:0px;
+    padding:1%; 
+}
+
+#btn-scroll {
+    display:none;
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index: 10;
+    font-size:0.8em;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:4%;
+   /* border-radius: 50%;*/
+}
+
+#btn-scroll:visited {
+    color:black;
+}
+
+/* end of COMMON */
+
+
+
+/* ----------------HERO IMAGE---------------------- */
+.hero-image {
+    width: 100vw;
+    height: 100vh;
+    background-color: saddlebrown;
+    background-image: url(lum3n-352940.jpg);
+    background-image: url(http://www.thegreatfoodclub.com/wp-content/uploads/2017/10/pexels-photo-568370.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h3, .hero-image a {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    transform: translateY(-50%);
+    color:white;
+        display:block;
+}
+
+h1 {
+    font-family: 'Lobster', cursive !important;
+    width: 90%;
+    top: 50%;
+    font-size: 5em;
+}
+
+h3 {
+    top:40%;
+    font-family: 'Great Vibes', cursive !important;
+    font-size:2em;
+}
+
+.hero-image a {
+
+    border: 1px solid white;
+    font-size: 1.5em;
+    top:55%;
+    max-width:300px;
+    border-radius: 50px;
+    display:none;
+}
+/* end of HERO IMAGE */
+
+
+
+/* -----------------NAVIGATION-------------------*/
+    
+nav {
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:100vw;
+    padding:1%;
+    z-index: 10;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0; 
+    display: flex;
+}
+
+nav a {
+  display: block;
+  color: white;
+}
+
+nav a:hover {
+  color: #ffd11a;
+}
+/*END OF NAVIGATION */
+
+
+
+/*-----------------------ABOUT----------------------------*/
+
+#about {
+    border-top: 3px solid white;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#our-rest {
+    border: 0px solid black;
+    width:400px;
+    padding:5%;
+}
+
+
+/*  SLIDESHOW   */
+
+.slideshow-container {
+    width:400px;
+    height:400px;
+    position: relative;
+    margin: auto;
+}
+
+.slides-img {
+    position:absolute;
+    margin:auto;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border: 3px solid white;
+    z-index: -1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      margin-left: 3px;
+      margin-right: -3px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/6) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* end of ABOUT */
+
+/*-------------------- MENU------------------------*/
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.pizza-img {
+    background-color: #d3d3d3;
+    padding: 5px;
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+p.pizza {
+    position: absolute;
+    margin-top:-55px;
+    padding:10px 5px 10px 5px;
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size:1rem;
+    font-weight: bold;
+    text-align: center;
+    width:400px;
+}
+
+.price {
+    font-size: 1em;
+    float:right;
+    padding-right:2%;
+}
+
+p.ing {
+    background-color: rgba(0,0,0, 0.6);
+    position:absolute;
+    margin-top:-136px;
+    padding:10px 5px 11px 5px;
+    width:400px;
+    text-align: center;
+    display:none;
+}
+
+/* end of MENU */
+
+
+
+
+/* -------------------RESERVATION--------------------*/
+.booking-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#hours {
+    flex-grow: 1;
+    text-align: center;
+    margin:1%;
+    padding:2%;
+    border-right: 1px solid grey;
+}
+
+#hours p {
+    padding:5%;
+}
+
+#booking {
+    padding:2%;
+    margin:1%;
+}
+
+#booking, #div-output {
+    flex-grow: 1.7;
+    margin-left:2%;
+}
+
+.form-column {
+    display:inline-block;
+    float:left;
+    width:50%;
+}
+
+#reservation{
+    margin:1%;
+}
+
+#reserve-new {
+    display:none;
+}
+/*end of RESERVATION*/
+
+/*CONTACTS*/
+
+#contacts {
+    padding: 15px 0 15px 0;
+    color:white;
+    background-image: url(igor-ovsyannykov-458022.jpg);
+    background-image: url(https://4men.pt/wp-content/uploads/2017/12/d79fb72f72199d028aeea419db70ac50.jpg);
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.contact-info {
+    background-color: rgba(0,0,0, 0.6);
+    margin:1%;
+    padding:1%;
+}
+#map {
+    width:400px;
+    height:300px;
+    margin-bottom:10px;
+}
+
+/* end of CONTACTS */
+
+
+
+/* ------------------MEDIA QUERIES----------------*/
+
+/* on big screens - show ingredients on hover */
+@media (min-width:1025px) {
+    .pizza-item:hover p.ing {
+        display:block;
+    }  
+    .pizza-item:hover .pizza-img {
+        background-color:white;
+    }
+
+}
+
+
+/*medium screens*/
+@media (max-width: 1024px) {
+    .hero-image {
+        height: 70vh;
+    }
+    
+    nav {
+        justify-content: space-around;
+        flex-flow:nowrap;
+    }
+    nav a { 
+        font-size:0.8em;
+    }
+    
+    .contact-info{
+        margin:10px;
+    }
+    
+    #contacts div {
+        width:90vw;
+    }
+    
+    .pizza-img, p.pizza, p.ing {
+        width:250px;
+        font-size: 0.7em;
+    }
+    
+    p.ing {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 7px;
+        font-size: 0.6em;
+    }
+    
+    .pizza-img {
+        height:250px;
+        background-color: white;
+    }
+    
+    p.pizza{
+        margin-top:-45px;
+    }
+    
+    p.ing {
+        display:block;
+        margin-top:-105px;
+    }
+    
+    #reservation {
+        text-align: center;
+    }
+
+}
+
+/*fix for the border of "hours"*/
+@media (max-width: 974px) {
+    #hours {
+    border-right: 0px;
+    border-bottom: 1px solid grey ;
+    }
+
+
+/*small screens*/
+@media (max-width: 600px) {
+    nav {
+        flex-flow: column wrap;
+        padding: 0;
+        position:relative;
+  }  
+    
+    nav a {  
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
+        background-color:    #252934;
+  }
+    nav li:last-of-type a {border-bottom: none;}
+    
+    .hero-image {height: 45vh;}
+    
+    h1 {font-size: 2em;}
+    
+    h3 {font-size:20px;}
+    
+    .container{font-size: 0.7em;}
+    
+    .description, #reservation {
+        font-size: 0.8em;
+        padding-top:5%;
+        margin-left:5%;
+    }
+    
+    #map {width:250px;}
+    
+    .pizza-img {
+        width:250px;
+        height:250px;
+    }
+    
+    p.pizza, p.ing {
+        width:250px;
+        font-size: 0.7em;
+    }
+    
+    p.ing {
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 13px;
+    }
+
+    .form-column {width:100%;}
+    
+    #our-rest {
+        width:70%;
+        padding:10%;
+    }
+    
+    .slides-img, .slideshow-container {
+       width:250px;
+        height:250px;
+    }
+}
+
+

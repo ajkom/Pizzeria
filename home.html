@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pizzeria</title>
+  <!--  Styles  -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+ <div class="main-containter flex-container">
+     
+     <a id="btn-scroll" href="#">▲</a>
+     
+     <nav>
+         <a href="#">HOME</a>
+         <a href="#menu">MENU</a>
+         <a href="#about">ABOUT</a>
+         <a href="#book">BOOK A TABLE</a>
+         <a href="#contacts">CONTACTS</a>
+     </nav>
+     
+     <div class="hero-image">
+       <h3>Welcome to</h3>
+       <h1>Pizzeria</h1>
+         <a href="#book">Book a table</a>
+     </div>
+     
+     <div class="container">
+        
+        <div id="about" class="main-item" >
+             
+            <div>
+                <h2>OUR RESTAURANT</h2>
+
+                <div class="description" id="our-rest">
+                    Established in Helsinki in 2001, Pizzeria has since become one of the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>
+                    Located in the city center, we lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+            </div>
+            <div>        
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img class="slides-img" src="https://leblognutrition.files.wordpress.com/2017/11/interview-edenred-restaurants-salaries.jpg" >
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img class="slides-img" src="https://i.pinimg.com/564x/9e/1d/4b/9e1d4ba3b6c59f6fb21f1c0c03b4cf96.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img class="slides-img" src="https://i.pinimg.com/564x/dd/9e/00/dd9e001179f08d91fc018b22e89101d2.jpg">
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img class="slides-img" src="https://i.pinimg.com/564x/e6/12/ce/e612ce384c072608e330b19b68177b8d.jpg" >
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img class="slides-img" src="https://i.pinimg.com/564x/48/cc/9d/48cc9d9eb44d1cc19b0061a8a704222f.jpg" >
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img class="slides-img" src="https://i.pinimg.com/564x/9a/30/83/9a30832df0421544c01378a8677a2d0e.jpg" >
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                
+            </div>
+            
+            <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>    
+            </div>
+
+           
+        </div>
+  
+        <div id="menu" class="main-item" >
+            <h2>OUR MENU</h2>
+
+            <p class=description>Taste our thin crust hot delicious Italian pizza made of the freshest ingredients by our chief straight from Rome</p>
+        
+            <div class="flex-container">
+                <div class="pizza-item">
+                    <img id="marg" class="pizza-img" src="http://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2011/1/6/0/CCEV103_Margherita-Pizza_s4x3.jpg.rend.hgtvcom.616.462.suffix/1416867304309.jpeg"
+                    alt="margherita">
+                <p class="ing">
+                    tomato sauce, fresh tomatoes, mozzarella cheese, basil</p>    
+                <p class="pizza">Margherita <span class="price">8€</span></p></div>
+
+                <div class="pizza-item">
+                    <img class="pizza-img" src="http://assets.blog.foodnetwork.ca/wp-content/uploads/sites/6/2016/04/hawaiian-pizza.jpg"
+                    alt="hawaiian"> 
+
+                <p class="ing">
+                    tomato sauce, cheese, pineapple, ham, bacon</p>
+                <p class="pizza">Hawaiian <span class="price">10€</span></p></div>
+
+                <div class="pizza-item">
+                     <img class="pizza-img" 
+                    src= "http://fillyourplate.org/blog/wp-content/uploads/2015/02/bigstock-Hot-Homemade-Pepperoni-Pizza-74542819-768x512.jpg"
+                    alt="pepperoni">
+
+                <p class="ing">
+                    tomato sauce, cheese, salami, paprika, oregano, basil</p>
+                <p class="pizza">Pepperoni <span class="price">9€</span></p></div>
+
+                <div class="pizza-item">
+                    <img class="pizza-img" 
+                    src= "http://img.taste.com.au/TM4lbkq7/taste/2016/11/smokey-barbecue-chicken-pizza-83697-1.jpeg"
+                    alt="barbecue chicken"> 
+
+                <p class="ing">
+                    grilled chicken, BBQ sauce, peppers, onion, cheddar cheese</p>
+                <p class="pizza">Barbecue chicken <span class="price">10€</span></p></div>
+
+                <div class="pizza-item">
+                    <img class="pizza-img" 
+                    src= "http://hapanom.com/wp-content/uploads/2016/07/Pizza-Carbonara-IG.jpg"
+                    alt="carbonara">
+
+                <p class="ing">
+                    cream sauce, cheese, bacon, with an egg on top</p>
+                <p class="pizza">Carbonara <span class="price">11€</span></p></div>
+
+                <div class="pizza-item">
+                    <img class="pizza-img" 
+                    src= "http://www.basilico.co.uk/sites/default/files/styles/flexslider_full/public/quatro-formaggi.jpg"
+                    alt="4 fromaggi">   
+
+                <p class="ing">
+                    mozzarella, stracchino, fontina and gorgonzola cheeses</p>
+                <p class="pizza">Quattro fromaggi <span class="price">9€</span></p>
+                </div>
+
+                <div class="pizza-item">
+                    <img class="pizza-img" 
+                    src="http://www.picerija13-trinaestica.rs/wp-content/uploads/2015/04/quattro-stagioni-cafepizzeria13.jpg" alt="4 stagioni">
+
+                <p class="ing">
+                    artichokes, tomatoes, mushrooms, ham, olives</p>
+                <p class="pizza">Quattro stagioni <span class="price">11,5€</span></p>
+                </div>
+
+                <div class="pizza-item">
+                    <img class="pizza-img" 
+                    src= "http://recept.photo/wp-content/uploads/2014/07/8-niz.jpg"
+                    alt="shrimps and salmon">
+
+                <p class="ing">
+                    tomatoes, garlic and cheese cream sauce, smoked salmon, shrimps</p>    
+                <p class="pizza">Shrimps and salmon <span class="price">12€</span></p></div>
+
+                <div class="pizza-item">
+                    <img class="pizza-img" 
+                    src= "https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/03/d2.jpg"
+                    alt="diavolo">
+
+                <p class="ing">
+                    tomato sauce, mozzarella cheese, spicy salami, chili pepper </p>        
+                <p class="pizza">Diavolo <span class="price">10€</span></p></div>
+            </div>
+    
+        </div>
+      
+        <div id="book" class="booking-flex main-item">
+       
+            <div id="hours" >
+
+                <h2>OUR WORKING HOURS</h2>
+                <p>Monday-Thursday<br>
+                09:00-22:00<br><br>
+
+                Friday-Sunday<br>
+                10:00-23:00
+                </p>
+            </div>
+             <!-- the script is checking if date/time is ok --> 
+            <div id="booking">
+                <h2>BOOK A TABLE</h2>
+
+                <form name="reservation" id="reservation">
+                    <div class="form-column">
+                        Number of people:<br>
+                        <input type="number" name="num" id="num" ><br>
+                        Date:<br>
+                        <input type="date" name="date" id="date" ><br>
+                        Time:<br>
+                        <input type="time" name="time" id="time" ><br>
+                    </div>
+                    <div class="form-column">
+                        Name:<br> <input type="text" name="name" id="name" ><br>
+                        Phone:<br> <input type="text" name="phone" id="phone" ><br>
+                        Email:<br> <input type="email" name="email" id="email"><br>
+                    <br>
+                    </div>
+                    <button id="reserve" onclick=book();>Reserve now</button>
+                </form>
+
+                <p id="output"></p>
+                
+                <button id="reserve-new">Reserve again</button>
+            </div>
+    
+        </div>
+      
+        <div id="contacts" class="main-item">
+        
+            <div class="contact-info" id="div-contacts">
+                <h2>OUR CONTACTS</h2>
+
+                <p class="description"> Our address is Ratapihantie, 11<br>
+                Our number is: +358 46 7770011<br>
+                Our email address is pizzeria@mail.fi
+                </p>
+            </div>
+
+            <div class="contact-info" id="div-map">
+                <h2>DIRECTIONS</h2>
+
+                <div id="map"></div>
+            </div>
+        </div>
+   
+     </div>
+   
+</div>
+
+ <footer>
+    <p> &copy a1500603, 2017</p>
+ </footer>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="script.js"></script> 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDj6UCEuHMTO7-EnuFG3krxni1-KMqcx6g&callback=initMap"> </script> 
+</body>
+
+</html>
